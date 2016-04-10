@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+<head>
+    <meta charset="UTF-8">
+    <title>Angular | Custom Directives</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+</head>
+<body ng-controller="myController">
+
+<h2 class="text-md-center">{{  title }}</h2>
+<div class="row">
+    <div class="container center-block" ng-repeat="friend in friends">
+        <contact-card friend="friend"></contact-card>
+    </div>
+</div>
+
+
+<script src="js/angular.js"></script>
+<script src="js/angular-route.js"></script>
+<script src="js/app.js"></script>
+<script src="js/controllers.js"></script>
+<script src="js/directives.js"></script>
+</body>
+</html>
